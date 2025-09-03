@@ -64,26 +64,30 @@
 
 您可以通过以下方式从GitHub获取此工具：
 
-### 方法1：直接下载
-
-1. 访问项目页面：[wangb335/ping](https://github.com/wangb335/ping/)
-2. 点击 "Code" 按钮
-3. 选择 "Download ZIP" 下载压缩包
-4. 解压到本地目录
-
-### 方法2：使用Git克隆
+### 方法1：使用curl下载单个脚本
 
 ```bash
-git clone https://github.com/wangb335/ping.git
-cd ping
+curl -O https://github.com/wangb335/ping/blob/main/ping.sh
+chmod +x ping.sh
 ```
 
-### 方法3：使用wget下载
+## 🌐 在线使用
+
+### 2. 使用在线终端服务
 
 ```bash
-wget https://github.com/wangb335/ping/archive/refs/heads/main.zip
-unzip main.zip
+# 在支持bash的在线终端中运行
+curl -s https://raw.githubusercontent.com/wangb335/ping/main/ping.sh | bash
+
+# 带参数执行示例（扫描192.168.1.0网段，线程数2，超时10秒）
+bash <(curl -s https://raw.githubusercontent.com/wangb335/ping/main/ping.sh) 192.168.1.0 2 10
 ```
+
+参数说明：
+
+1. 第一个参数：要扫描的IP网段（如192.168.1.0）
+2. 第二个参数：并发线程数（默认2）
+3. 第三个参数：超时时间（秒，默认10）
 
 ## 📊 工作流程
 
