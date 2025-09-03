@@ -76,10 +76,9 @@ chmod +x ping.sh
 ### 2. 使用在线终端服务
 
 ```bash
-# 在支持bash的在线终端中运行
-curl -s https://raw.githubusercontent.com/wangb335/ping/main/ping.sh | bash
+# 在支持bash的在线终端中运行,带参数执行示例（扫描192.168.1.0网段，线程数2，超时10秒）
+curl -s https://raw.githubusercontent.com/wangb335/ping/main/ping.sh | bash -s -- 192.168.1.0 2 10
 
-# 带参数执行示例（扫描192.168.1.0网段，线程数2，超时10秒）
 bash <(curl -s https://raw.githubusercontent.com/wangb335/ping/main/ping.sh) 192.168.1.0 2 10
 ```
 
