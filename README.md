@@ -66,7 +66,7 @@
 
 ### 方法1：直接下载
 
-1. 访问项目页面：[wangb335/Ping](https://github.com/wangb335/Ping/)
+1. 访问项目页面：[wangb335/ping](https://github.com/wangb335/ping/)
 2. 点击 "Code" 按钮
 3. 选择 "Download ZIP" 下载压缩包
 4. 解压到本地目录
@@ -74,14 +74,14 @@
 ### 方法2：使用Git克隆
 
 ```bash
-git clone https://github.com/wangb335/Ping.git
-cd Ping
+git clone https://github.com/wangb335/ping.git
+cd ping
 ```
 
 ### 方法3：使用wget下载
 
 ```bash
-wget https://github.com/wangb335/Ping/archive/refs/heads/main.zip
+wget https://github.com/wangb335/ping/archive/refs/heads/main.zip
 unzip main.zip
 ```
 
@@ -108,10 +108,3 @@ flowchart TD
 - **依赖项**：需要安装`ping`和`nc`(netcat)命令
 - **网络负载**：大范围并行扫描可能会增加网络负载
 - **扫描权限**：在扫描前请确保您有权限扫描目标网络
-
-## 🔄 版本历史
-
-- **1.0.0** - 初始版本
-- **1.1.0** - 添加并行扫描功能
-- **1.2.0** - 重构为函数式结构，提高代码可维护性
-- **1.3.0** - 添加更多颜色和格式元素，优化输出显示
