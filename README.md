@@ -60,6 +60,31 @@
 |------|------|
 | `pinglog/scan_result_YYYYMMDD_HHMMSS.txt` | 包含所有扫描结果的详细日志文件 |
 
+## 📥 从GitHub下载
+
+您可以通过以下方式从GitHub获取此工具：
+
+### 方法1：直接下载
+
+1. 访问项目页面：[wangb335/Ping](https://github.com/wangb335/Ping/)
+2. 点击 "Code" 按钮
+3. 选择 "Download ZIP" 下载压缩包
+4. 解压到本地目录
+
+### 方法2：使用Git克隆
+
+```bash
+git clone https://github.com/wangb335/Ping.git
+cd Ping
+```
+
+### 方法3：使用wget下载
+
+```bash
+wget https://github.com/wangb335/Ping/archive/refs/heads/main.zip
+unzip main.zip
+```
+
 ## 📊 工作流程
 
 ```mermaid
